@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.navbar:hover,.navbar.expanded {
+    width:250px;
+    overflow:visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    background:white;
+    height:100%;
+    width:60px;
+    overflow:hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.navTitle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.log{
+    width: 80px;
+    height: 80px;
+}
+.title{
+    font-weight: 600;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.title:hover{
+    transform: scale(1.5);
+}
+.navItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.items:hover{
+    transform: scale(1.5);
+}
+
+.items{
+    transition: all 0.3s ease;
+   margin-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.home{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+.hUp{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.hLogo{
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+.hDown{
+    display: flex;
+}
+
+.hLeft{
+    height: 100vh;
+    flex: 0.5;
+}
+.lef{
+    width: 80%;
+    height: 80%;
+}
+.hRight{
+    height: 100vh;
+    flex: 0.5;
+}
+.hrightimg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.hLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+.ht1{
+    font-size: 20px;
+}
+
+
+
+.back{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.aboutUs{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.services{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact{
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+}
+.ableft{
+    flex: 0.5;
+}
+
+.ablef{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.abright{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abdesc{
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.abUp{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abt{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.abDown{
+    display: flex;
+}
+
+.ps{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.points{
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+
+
+.upServ{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 40px;
+}
+.downServ{
+    display: flex;
+}
+.sLeft{
+    flex: 0.5;
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+.sRight{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servDesc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.servDescPoints{
+    display: flex;
+    flex: start;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: start;
+    margin: 30px;
+}
+
+.servImg{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.bookButton{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+    background-color: #32C28F;
+    transition: all 0.3s ease;
+}
+
+.bookButton:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.processPop{
+    position: absolute;
+    display: none;
+    width: 490px;
+    height: 490px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 100px;
+    padding: 10px 50px;
+  flex-direction: column;
+  -webkit-box-shadow: 10px 10px 62px 16px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 10px 10px 62px 16px rgba(0, 0, 0, 0.59);
+  box-shadow: 10px 10px 62px 16px rgba(0, 0, 0, 0.59);
+}
+
+.close{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.close:hover{
+    background-color: white;
+    color: black;
+}
+
+.pForm{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.iT{
+    position: absolute;
+    top: 15px;
+    align-self: center;
+}
+
+.inp{
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  width: 400px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.bM{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    position: absolute;
+    bottom: 50px;
+    align-self: center;
+    background-color: #32C28F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.bM:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+.upR{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.rTitle{
+    margin-top: 30px;
+}
+
+.downR{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+    border-radius: 16px;
+}
+.cc{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    width: 350px;
+    height: 550px;
+    margin: 40px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+}
+.c:hover{
+    transform: scale(1.1);
+}
+.cc:hover{
+    transform: scale(1.1);
+}
+
+.cUp{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.cCenter{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cDown{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.downName{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.arr{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 30px;
+}
+.img1{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 60px;
+}
+
+.cDesc{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+.ccUp{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+.arr1{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50px;
+}
+.imgcc{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 80px;
+}
+.ccCenter{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccDown{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ccDesc{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccDescription{
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 17px;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.ccdownName{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUp{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.contactDown{
+    display: flex;
+}
+.contactLeft{
+    flex:0.5;
+    width: 100vw;
+    height: calc(100vh - 120px);
+}
+.contactRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.5;
+    width: 100vw;
+    height: calc(100vh - 120px);
+}
+.footer{
+    width: 100vw;
+    height: 50px;
+    background-color: #32C28F;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.copyright{
+    margin-right: 50px;
+}
+
+
+.cImg{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.contactForm{
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.nor{
+    width: 350px;
+    height: 30px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.message{
+    width: 350px;
+    height: 30%;
+}
+
+.send{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 80px;
+    background-color: #32C28F;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.send:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
